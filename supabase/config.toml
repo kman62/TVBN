@@ -1,0 +1,12 @@
+project_id = "tvbn"
+api_url = "https://api.supabase.com"
+[db]
+branch = "main"
+shadow_branch = "preview"
+sslmode = "require"
+
+[functions]
+timeout = 30
+
+[studio]
+port = 54323

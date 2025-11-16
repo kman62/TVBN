@@ -1,0 +1,26 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "git": {
+    "productionBranch": "main",
+    "deploymentEnabled": {
+      "preview": true,
+      "production": true
+    }
+  },
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key",
+    "SENTRY_DSN": "@sentry-dsn"
+  },
+  "functions": {
+    "api/**": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
