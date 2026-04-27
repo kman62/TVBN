@@ -1,0 +1,7 @@
+[project]
+api_url = "https://YOUR-PROJECT.supabase.co"
+project_id = "YOUR-PROJECT-ID"
+
+[functions]
+dir = "supabase/functions"
+ignore = ["**/node_modules", "**/dist"]
